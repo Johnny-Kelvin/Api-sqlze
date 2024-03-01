@@ -1,6 +1,12 @@
 const clientController = require('../controllers/clientController')
 
 
+async function home(){
+    app.get('/', () => {
+        return "Hellow"
+    })
+}
+
 async function listar_clientes(app){
     app.get('/client', clientController.listaClients)
 }
