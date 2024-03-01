@@ -8,7 +8,7 @@ const  db = require("./database/database");
 
 app.register(require('./app'))
 
-const port = 3000;
+const port = 8080;
 
 const start = async () => {
   try {
