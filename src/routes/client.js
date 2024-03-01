@@ -1,7 +1,7 @@
 const clientController = require('../controllers/clientController')
 
 
-async function home(){
+async function home(app){
     app.get('/', () => {
         return "Hellow"
     })
