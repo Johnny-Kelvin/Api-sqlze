@@ -18,4 +18,5 @@ function configure_db(){
      db.sync()
 }
 
+
 module.exports = {configure_all}
