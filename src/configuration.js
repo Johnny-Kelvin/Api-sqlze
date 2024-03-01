@@ -7,6 +7,7 @@ async function configure_all(app){
 }
 
 async function configure_routes (app){
+    app.register(client.home)
     app.register(client.listar_clientes)
     app.register(client.criar_cliente)
     app.register(client.listar_cliente_id)

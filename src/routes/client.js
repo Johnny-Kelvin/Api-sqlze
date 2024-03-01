@@ -27,4 +27,4 @@ async function delete_cliente(app){
     app.delete('/client/:id', clientController.deleteClient)
 }
 
-module.exports = {listar_clientes, criar_cliente, listar_cliente_id, delete_cliente, atualiza_cliente}
+module.exports = {home,listar_clientes, criar_cliente, listar_cliente_id, delete_cliente, atualiza_cliente}
