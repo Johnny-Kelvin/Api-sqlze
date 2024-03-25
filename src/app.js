@@ -1,11 +1,14 @@
-const fastify = require("fastify");
-const db = require("./database/database");
+const path = require("path");
 
+const app = require("fastify")({ logger: true,});
+app.register(require('@fastify/cors'), {
+  origin:'*',
+  methods:['*'],
+  
+})
+//app.register(require('fastify-favicon'), { path: './public', name: 'icon.ico', maxAge: 3600 })
 const { configure_all } = require("./configuration");
-const app = fastify({ logger: true });
-
 app.register(configure_all)
-
 
 
 module.exports = app;
